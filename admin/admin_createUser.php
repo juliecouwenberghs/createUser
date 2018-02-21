@@ -30,22 +30,23 @@
 <title>CMS Portal</title>
 </head>
 <body>
-  <h1>Welcome to your create user page</h1>
+<div id="container">
+  <h1>Welcome! Create a New User Below</h1>
 
   <?php if(!empty($sendMessage)){echo $sendMessage;} ?>
 
   <form action="admin_createUser.php" method="post">
     <label>First Name:</label>
-    <input type="text" name="fname" value="<?php if(!empty($fname)){echo $fname;} ?>"><br><br>
+    <input type="text" name="fname" id="name" value="<?php if(!empty($fname)){echo $fname;} ?>"><br><br>
 
     <label>Username:</label>
-    <input type="text" name="username" value="<?php if(!empty($username)){echo $username;} ?>"><br><br>
+    <input type="text" name="username" id="username" value="<?php if(!empty($username)){echo $username;} ?>"><br><br>
 
     <label>Passsword:</label>
-    <input type="text" name="password" value="<?php if(!empty($password)){echo $password;} ?>"><br><br>
+    <input type="text" name="password" id="password" value="<?php if(!empty($password)){echo $password;} ?>"><br><br>
 
     <label>Email:</label>
-    <input type="text" name="email" value="<?php if(!empty($email)){echo $email;} ?>"><br><br>
+    <input type="text" name="email" id="email" value="<?php if(!empty($email)){echo $email;} ?>"><br><br>
 
     <label>User Level:</label>
     <select name="userlvl">
@@ -53,8 +54,11 @@
       <option value="2">Web Admin</option>
       <option value="1">Web Master</option>
     </select><br><br>
-    <input type="submit" name="submit" value="Create User">
+    <div id="lower">
+      <input type="submit" name="submit" value="Create User">
+  </div>
   </form>
+</div>
 
 </body>
 </html>

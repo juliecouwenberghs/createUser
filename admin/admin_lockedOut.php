@@ -12,6 +12,6 @@
 <title>CMS Portal Login</title>
 </head>
 <body>
-  <h1>YOU'RE LOCKED OUUUUT</h1>
+  <h1>Sorry you're locked out! Try again later.</h1>
 </body>
 </html>
